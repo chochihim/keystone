@@ -57,6 +57,7 @@ describe('Slug#implementation', () => {
               keystone,
               query: `mutation { ${createMutationName}(data: { name: "Test Entry!", title: "A title" } ) { id name url } }`,
             }).then(({ data, errors }) => {
+              console.log({ data, errors });
               expect(errors).toBe(undefined);
               expect(data[createMutationName]).toMatchObject({
                 url: 'test-entry',

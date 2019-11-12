@@ -86,7 +86,7 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
             expect(toStr(canaryStudent.teachers)).toHaveLength(0);
             expect(toStr(teacher1.students)).toHaveLength(0);
             expect(toStr(teacher2.students)).toHaveLength(0);
-
+            console.log('-=-=-=-=-=-=-=-=-');
             // Run the query to disconnect the teacher from student
             const { data, errors } = await graphqlRequest({
               keystone,
@@ -105,8 +105,9 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
           }
         `,
             });
-
             expect(errors).toBe(undefined);
+            console.log(data.createStudent);
+            // return;
 
             let newStudent = data.createStudent;
 
@@ -146,7 +147,7 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
             expect(toStr(teacher2.students)).toHaveLength(0);
 
             // Run the query to disconnect the teacher from student
-            const { errors } = await graphqlRequest({
+            const { data, errors } = await graphqlRequest({
               keystone,
               query: `
           mutation {
@@ -166,7 +167,8 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
             });
 
             expect(errors).toBe(undefined);
-
+            console.log(data);
+            // return;
             // Check the link has been broken
             teacher1 = await getTeacher(keystone, teacher1.id);
             teacher2 = await getTeacher(keystone, teacher2.id);
@@ -267,7 +269,7 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
         );
       });
 
-      test(
+      test.only(
         'nested disconnect during update mutation',
         runner(setupKeystone, async ({ keystone, create, update }) => {
           // Manually setup a connected Student <-> Teacher
@@ -275,7 +277,8 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
           let teacher2 = await create('Teacher', {});
           let student1 = await create('Student', { teachers: [teacher1.id, teacher2.id] });
           let student2 = await create('Student', { teachers: [teacher1.id, teacher2.id] });
-
+          console.log({ teacher1, teacher2, student1, student2 });
+          return;
           await update('Teacher', teacher1.id, { students: [student1.id, student2.id] });
           await update('Teacher', teacher2.id, { students: [student1.id, student2.id] });
 
@@ -289,9 +292,9 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
           compareIds(student2.teachers, [teacher1, teacher2]);
           compareIds(teacher1.students, [student1, student2]);
           compareIds(teacher2.students, [student1, student2]);
-
+          console.log('-=-=-=-=-=-=-=-=-=');
           // Run the query to disconnect the teacher from student
-          const { errors } = await graphqlRequest({
+          const { data, errors } = await graphqlRequest({
             keystone,
             query: `
         mutation {
@@ -311,7 +314,8 @@ multiAdapterRunners().map(({ runner, adapterName }) =>
           });
 
           expect(errors).toBe(undefined);
-
+          console.log(data.updateStudent);
+          return;
           // Check the link has been broken
           teacher1 = await getTeacher(keystone, teacher1.id);
           teacher2 = await getTeacher(keystone, teacher2.id);
