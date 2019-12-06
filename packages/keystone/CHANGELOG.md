@@ -1,5 +1,27 @@
 # @keystonejs/keystone
 
+## 5.3.0
+
+### Minor Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Adding 'operation' argument to all hooks
+
+* [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Fixes a bug with schema generation and display in the AdminUI when a list contains only fields where access control is false.
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Added a new field type 'Computed'. This allows creation of fields that return data computed from other field values or outside Keystone.
+
+### Patch Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Fixed bug where the returned value of a deleteItem() mutation was not always correctly populated.
+
+* [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Consolidated implementation of all listAdapter.find\*() methods to use the `itemsQuery()` API for internal consistency.
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Disable GraphiQL playground in production mode
+- Updated dependencies [[`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5)]:
+  - @keystonejs/fields@6.0.0
+  - @keystonejs/build-field-types@5.1.2
+  - @keystonejs/app-graphql@5.0.1
+
 ## 5.2.1
 
 ### Patch Changes

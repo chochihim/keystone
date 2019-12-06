@@ -1,5 +1,17 @@
 # @keystonejs/fields-mongoid
 
+## 5.0.1
+
+### Patch Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Updated react and react-dom to 16.12.0
+- Updated dependencies [[`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5)]:
+  - @keystonejs/fields@6.0.0
+  - @keystonejs/adapter-knex@6.0.0
+  - @arch-ui/input@0.1.2
+  - @keystonejs/build-field-types@5.1.2
+  - @keystonejs/adapter-mongoose@5.1.3
+
 ## 5.0.0
 
 ### Major Changes

@@ -1,5 +1,31 @@
 # @arch-ui/docs
 
+## 1.1.7
+
+### Patch Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Updated react and react-dom to 16.12.0
+- Updated dependencies [[`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5)]:
+  - @arch-ui/alert@0.0.9
+  - @arch-ui/badge@0.0.9
+  - @arch-ui/button@0.0.11
+  - @arch-ui/controls@0.1.1
+  - @arch-ui/dialog@0.0.11
+  - @arch-ui/dropdown@0.0.10
+  - @arch-ui/fields@2.0.3
+  - @arch-ui/icons@0.0.6
+  - @arch-ui/input@0.1.2
+  - @arch-ui/layout@0.2.6
+  - @arch-ui/loading@0.0.10
+  - @arch-ui/lozenge@0.0.9
+  - @arch-ui/navbar@0.1.3
+  - @arch-ui/pagination@0.0.11
+  - @arch-ui/pill@0.1.8
+  - @arch-ui/popout@0.0.10
+  - @arch-ui/select@0.1.1
+  - @arch-ui/tooltip@0.1.4
+  - @arch-ui/typography@0.0.10
+
 ## 1.1.6
 
 ### Patch Changes

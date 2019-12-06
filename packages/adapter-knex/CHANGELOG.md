@@ -1,5 +1,30 @@
 # @keystonejs/adapter-knex
 
+## 6.0.0
+
+### Major Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Removed `KnexListAdapter.createForeignKeys()` method.
+
+* [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - `KnexListAdapter.realKeys` are now computed in the `postConnect()` phase, rather than at object instantiation.
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Removed the `KnexListAdapter.createAdjacencyTable()` method.
+
+### Patch Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Removed `KnexRelationshipInterface.createForeignKey()`.
+
+* [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Consolidated the code paths for `create` and `update` operations for better internal consistency.
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Consolidated implementation of all listAdapter.find\*() methods to use the `itemsQuery()` API for internal consistency.
+
+* [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Fixed a bug which generated bad queries for deeply nested queries.
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Simplified code which performs update operations.
+- Updated dependencies [[`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5)]:
+  - @keystonejs/keystone@5.3.0
+  - @keystonejs/fields-auto-increment@5.0.1
+
 ## 5.1.0
 
 ### Minor Changes

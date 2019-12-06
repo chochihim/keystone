@@ -1,5 +1,26 @@
 # @keystonejs/field-content
 
+## 5.1.0
+
+### Minor Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Fixes some visual and console bugs with the content editor UI.
+
+* [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Fixes a bug where loading a field with blocks in the list columns can crash the adminUI.
+
+### Patch Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Updated react and react-dom to 16.12.0
+- Updated dependencies [[`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5), [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5)]:
+  - @keystonejs/fields@6.0.0
+  - @arch-ui/fields@2.0.3
+  - @arch-ui/hooks@0.0.5
+  - @arch-ui/icons@0.0.6
+  - @arch-ui/input@0.1.2
+  - @arch-ui/tooltip@0.1.4
+  - @arch-ui/typography@0.0.10
+  - @keystonejs/build-field-types@5.1.2
+
 ## 5.0.1
 
 ### Patch Changes

@@ -1,5 +1,11 @@
 # @keystonejs/file-adapters
 
+## 5.2.0
+
+### Minor Changes
+
+- [`426edc0`](https://github.com/keystonejs/keystone/commit/426edc054e2943c4677054a15a1ceb92348c5ae5) [#2048](https://github.com/keystonejs/keystone/pull/2048) Thanks [@sarneaud](https://github.com/sarneaud)! - Added delete method to file adapters
+
 ## 5.1.0
 
 ### Minor Changes
